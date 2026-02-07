@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>资源中心 - 听读小站</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo"><a href="index.html">听读小站</a></h1>
+            <div class="header-controls">
+                <a href="about.html" class="header-link" data-i18n="about-site">关于本站</a>
+                <button id="theme-toggle" class="icon-btn" aria-label="切换主题">
+                    <span id="theme-icon">🌙</span>
+                </button>
+                <button id="lang-toggle" class="icon-btn" aria-label="切换语言">
+                    <span id="lang-text">EN</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="resources-page">
+        <div class="container">
+            <section class="filters-section">
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="搜索资源..." data-i18n-placeholder="search-placeholder">
+                    <span class="search-icon">🔍</span>
+                </div>
+
+                <div class="filters">
+                    <div class="filter-group">
+                        <label data-i18n="filter-type">按类型：</label>
+                        <select id="type-filter">
+                            <option value="" data-i18n="all">全部</option>
+                            <option value="reading" data-i18n="reading">阅读</option>
+                            <option value="listening" data-i18n="listening">听力</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label data-i18n="filter-level">按难度：</label>
+                        <select id="level-filter">
+                            <option value="" data-i18n="all">全部</option>
+                            <option value="Elementary">Elementary</option>
+                            <option value="Lower-Intermediate">Lower-Intermediate</option>
+                            <option value="Intermediate">Intermediate</option>
+                            <option value="Upper-Intermediate">Upper-Intermediate</option>
+                            <option value="Advanced">Advanced</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+
+            <section class="resources-grid" id="resources-grid">
+                <!-- 资源卡片将通过JavaScript动态加载 -->
+            </section>
+
+            <div class="no-results" id="no-results" style="display: none;">
+                <p data-i18n="no-results">未找到匹配的资源</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>
+                <a href="about.html" data-i18n="about-site">关于本站</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/resources.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+

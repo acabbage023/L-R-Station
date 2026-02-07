@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>听读小站 - 英语学习资源导航</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">听读小站</h1>
+            <div class="header-controls">
+                <a href="about.html" class="header-link" data-i18n="about-site">关于本站</a>
+                <button id="theme-toggle" class="icon-btn" aria-label="切换主题">
+                    <span id="theme-icon">🌙</span>
+                </button>
+                <button id="lang-toggle" class="icon-btn" aria-label="切换语言">
+                    <span id="lang-text">EN</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="home-page">
+        <div class="container">
+            <section class="hero">
+                <h2 data-i18n="welcome-title">欢迎来到听读小站！</h2>
+                <p class="intro-text" data-i18n="welcome-desc">
+                    这是一个帮助高中生提升英语阅读与听力的精选资源平台。你可以通过测试了解自己的水平，再找到适合的资源。
+                </p>
+            </section>
+
+            <section class="actions">
+                <div class="action-card">
+                    <h3 data-i18n="vocab-test">词汇量测试</h3>
+                    <p data-i18n="vocab-test-desc">测试你的英语词汇量水平</p>
+                    <a href="https://my.vocabularysize.com/" target="_blank" class="btn btn-primary" data-i18n="take-test">开始测试</a>
+                </div>
+
+                <div class="action-card">
+                    <h3 data-i18n="level-test">阅读/听力水平测试</h3>
+                    <p data-i18n="level-test-desc">了解你的英语阅读和听力水平</p>
+                    <a href="https://www.efset.org/" target="_blank" class="btn btn-primary" data-i18n="take-test">开始测试</a>
+                </div>
+
+                <div class="action-card">
+                    <h3 data-i18n="browse-resources">浏览资源</h3>
+                    <p data-i18n="browse-resources-desc">跳过测试，直接浏览精选资源</p>
+                    <a href="resources.html" class="btn btn-secondary" data-i18n="browse-now">立即浏览</a>
+                </div>
+            </section>
+
+            <section class="assessment-info">
+                <div class="info-card">
+                    <p class="assessment-intro" data-i18n="assessment-intro">
+                    为了更好地选择适合你的内容，我们为大家准备了两个简单实用的测试工具。
+                </p>
+
+                    <h3 class="assessment-title" data-i18n="assessment-vocab-title">
+                        一、词汇量测试：了解你的英语词汇水平
+                    </h3>
+                    <p data-i18n="assessment-vocab-desc">
+                        词汇量测试可以帮助你快速判断目前的英语词汇基础。以下是分数区间对应的参考资源等级：
+                </p>
+                    <ul class="assessment-list">
+                        <li data-i18n="assessment-vocab-range-1">0–2000： 建议从 Elementary（初级） 资源开始</li>
+                        <li data-i18n="assessment-vocab-range-2">2000–5500： 适合 Lower-Intermediate（中下级） 资源</li>
+                        <li data-i18n="assessment-vocab-range-3">5500–6500： 适合 Intermediate（中级） 资源</li>
+                        <li data-i18n="assessment-vocab-range-4">6500–8000： 适合 Upper-Intermediate（中上级） 资源</li>
+                        <li data-i18n="assessment-vocab-range-5">8000+： 可以挑战 Advanced（高级） 资源</li>
+                </ul>
+
+                    <h3 class="assessment-title" data-i18n="assessment-efset-title">
+                        二、阅读/听力水平测试（EF SET）：评估你的综合英语能力
+                    </h3>
+                    <p data-i18n="assessment-efset-desc-1">
+                        EF标准英语测试可以测出你的整体英语水平。
+                </p>
+                    <p data-i18n="assessment-efset-desc-2">
+                        时间有限的同学可以选择 50分钟版本，主要测试听力与阅读。
+                    </p>
+                    <p data-i18n="assessment-efset-desc-3">
+                        时间充裕的同学可以选择 90分钟完整版，涵盖听、说、读、写四项技能，获得更全面的评估结果。
+                </p>
+                    <p data-i18n="assessment-efset-desc-4">
+                    根据测试中的听读成绩，可参考以下等级进行资源选择（实际情况因人而异，可灵活调整）：
+                </p>
+                    <ul class="assessment-list">
+                        <li data-i18n="assessment-efset-level-a1a2">A1–A2： 初级（Elementary）</li>
+                        <li data-i18n="assessment-efset-level-b1">B1： 中下级（Lower-Intermediate）</li>
+                        <li data-i18n="assessment-efset-level-b2">B2： 中级（Intermediate）</li>
+                        <li data-i18n="assessment-efset-level-c1">C1： 中上级（Upper-Intermediate）</li>
+                        <li data-i18n="assessment-efset-level-c2">C2： 高级（Advanced）</li>
+                </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>
+                <a href="about.html" data-i18n="about-site">关于本站</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/i18n.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
